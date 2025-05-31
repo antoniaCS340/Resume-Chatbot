@@ -16,7 +16,7 @@ public class ChatController {
     public ChatController() {
         responseMap = new HashMap<>();
         responseMap.put("Hi, I'm Antonia, an undergraduate Computer Science student at the University of Crete, passionate about software development and problem-solving.", 
-                        List.of("about yourself", "who are you", "introduce yourself"));
+                        List.of("about yourself", "who are you", "tell me about you", "introduce yourself"));
         responseMap.put("I have developed a fire service app for citizens to receive local incident alerts and register as volunteers, and an event venue booking app.", 
                         List.of("projects", "what have you built", "worked on"));
         responseMap.put("I'm skilled in C, C++, C#, Python, Java, HTML, CSS, JavaScript, and database management.", 
@@ -36,9 +36,9 @@ public class ChatController {
         responseMap.put("I was born in Heraklion and live permanently downtown.", 
                         List.of("from", "located", "origin", "hometown", "where are you"));
         responseMap.put("I aim to apply my programming skills in real-world projects, grow through internships or entry-level roles, and contribute to dynamic software development teams.", 
-                        List.of("goals", "career aspirations", "future plans"));
+                        List.of("goals", "career", "future plans"));
         responseMap.put("You can reach me at antocharal24@gmail.com.", 
-                        List.of("contact", "reach you", "email"));
+                        List.of("contact", "reach you", "email", "find you"));
     }
 
     @PostMapping("/chat")

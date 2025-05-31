@@ -13,6 +13,6 @@ git clone <https://github.com/antoniaCS340/Resume-Chatbot.git>
 cd resume-chatbot
 
 You'll need Java 21 and Maven
-Install dependencies: `mvn clean install/`
-run it with: `mvn spring-boot:run/`
+Install dependencies: `mvn clean install`
+run it with: `mvn spring-boot:run`
 and then visit http://localhost:8080
