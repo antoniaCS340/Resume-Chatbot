@@ -3,13 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume-Chatbot</title>
+    <title>Resume Chatbot</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
-    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
-        <h1 class="text-2xl font-bold mb-4 text-center">Chatbot</h1>
-        <p>Interface</p>
+<body class="chat-page-background bg-gradient-to-br from-gray-50 to-gray-200 flex items-center justify-center min-h-screen">
+    <div class="chat-container bg-white p-8 rounded-xl shadow-xl w-full max-w-lg">
+        <h1 class="chat-title text-3xl font-bold section-spacing mb-6 text-center text-gray-800">Resume Chatbot</h1>
+        <div class="section-spacing mb-4">
+            <textarea id="userInput" class="question-input-box w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300" rows="4" placeholder="Ask about my resume..."></textarea>
+        </div>
+        <div class="action-buttons flex justify-center gap-4 mb-6">
+            <button onclick="sendPrompt()" class="send-button bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-200">Send</button>
+            <button onclick="clearChat()" class="clear-button bg-gray-600 text-white px-6 py-2 rounded-full hover:bg-gray-700 transition duration-200">Clear</button>
+        </div>
+        <div class="section-spacing mb-4">
+            <h2 class="sample-questions-title text-lg font-semibold mb-2 text-gray-700">Sample Questions:</h2>
+            <ul class="sample-questions-list list-disc pl-5 space-y-1">
+                <li><button onclick="setSampleQuestion('Tell me about yourself')" class="sample-question-link text-blue-600 hover:underline">Tell me about yourself</button></li>
+                <li><button onclick="setSampleQuestion('What projects have you worked on?')" class="sample-question-link text-blue-600 hover:underline">What projects have you worked on?</button></li>
+                <li><button onclick="setSampleQuestion('What are your skills?')" class="sample-question-link text-blue-600 hover:underline">What are your skills?</button></li>
+                <li><button onclick="setSampleQuestion('Tell me about your education')" class="sample-question-link text-blue-600 hover:underline">Tell me about your education</button></li>
+                <li><button onclick="setSampleQuestion('What are your hobbies?')" class="sample-question-link text-blue-600 hover:underline">What are your hobbies?</button></li>
+                <li><button onclick="setSampleQuestion('What is your work experience?')" class="sample-question-link text-blue-600 hover:underline">What is your work experience?</button></li>
+                <li><button onclick="setSampleQuestion('Where are you located?')" class="sample-question-link text-blue-600 hover:underline">Where are you located?</button></li>
+                <li><button onclick="setSampleQuestion('What are your career goals?')" class="sample-question-link text-blue-600 hover:underline">What are your career goals?</button></li>
+                <li><button onclick="setSampleQuestion('How can I contact you?')" class="sample-question-link text-blue-600 hover:underline">How can I contact you?</button></li>
+            </ul>
+        </div>
+        <div id="response" class="response-area p-4 bg-gray-50 rounded-lg border border-gray-200 min-h-[100px] text-gray-700"></div>
     </div>
+    <script src="/script.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@ A project to create a chatbot that answers questions about my resume, simulating
 
 ## Project Structure
 - **Backend**: Spring Boot application with a `/chat` endpoint using a keyword-based response map.
-- **Frontend**: HTML interface with TailwindCSS (under development).
+- **Frontend**: HTML interface with TailwindCSS, style the chatbox with action buttons.
 - **Directory**:
   - `src/main/java/com/example/chatbot/` - Contains Java source code.
   - `src/main/resources/static/` - Contains the `index.html`.
