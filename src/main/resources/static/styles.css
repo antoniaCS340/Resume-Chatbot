@@ -1,0 +1,65 @@
+body.chat-page-background {
+    background: linear-gradient(135deg, #420170, #6A0DAD, #483D8B);
+    position: relative;
+    overflow: hidden;
+}
+
+body.chat-page-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.stars {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    pointer-events: none;
+}
+
+.star {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background: white;
+    border-radius: 50%;
+    opacity: 1;
+    animation: moveStar 5s infinite linear, fadeStar 5s infinite ease-in-out;
+}
+
+@keyframes moveStar {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes fadeStar {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    80% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
