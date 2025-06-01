@@ -7,13 +7,14 @@ A project to create a chatbot that answers questions about my resume, simulating
 
 - **Frontend**: HTML interface with TailwindCSS, style the chatbox with action buttons and animation in background.
 - **Directory**:
-  - `src/main/java/com/example/chatbot/` - Contains Java source code, ChatController.java, ChatRequest.java, ChatResponse.java.
+  - `src/main/java/com/example/chatbot/` - Contains Java source code, `ChatController.java, ChatRequest.java, ChatResponse.java`.
   - `src/main/resources/static/` - Contains the `index.html, script.js, styles.css`.
 
 ```bash
 git clone https://github.com/antoniaCS340/Resume-Chatbot.git
 cd Resume-Chatbot
 
+You'll need Java 21 and Maven installed. 
 To install dependencies, run:
  mvn clean install
  mvn spring-boot:run
