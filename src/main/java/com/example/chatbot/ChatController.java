@@ -76,6 +76,14 @@ public class ChatController {
             "You can reach me at antocharal24@gmail.com.",
             List.of(Pattern.compile("(?i)\\b(contact|how.*reach you|email|how.*find you|get in touch)\\b"))
         );
+
+        /*
+            regex pattern:
+            -begin with (?i) to ignore case and match both lowercase and uppercase input.
+            -\b to ensure a match only occurs on whole words, preventing accidental partial matches.
+            -the | operator to match any of multiple phrases or words.
+            -.* to allow for variable words in between known phrases 
+        */
     }
 
     @PostMapping("/chat")
