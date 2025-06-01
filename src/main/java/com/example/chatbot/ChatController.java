@@ -18,8 +18,13 @@ public class ChatController {
         responseMap = new HashMap<>();
 
         responseMap.put(
-            "Hi, I'm Antonia, an undergraduate Computer Science student at the University of Crete, passionate about software development and problem-solving.",
+            "I'm Antonia, an undergraduate Computer Science student at the University of Crete, passionate about software development and problem-solving.",
             List.of(Pattern.compile("(?i)\\b(who (are|r) you|introduce yourself|tell me about yourself|about you|yourself)\\b"))
+        );
+
+        responseMap.put(
+            "Hi, My name is Antonia Charalampaki, and I'm happy to answer any questions you have about my education, experience, or skills.",
+            List.of(Pattern.compile("(?i)\\b(name| what. *name)\\b"))
         );
 
         responseMap.put(
@@ -34,7 +39,7 @@ public class ChatController {
 
         responseMap.put(
             "I am an undergraduate student in Computer Science at the University of Crete, starting in 2022. I graduated high school in 2022 with a grade of 19.8/20.",
-            List.of(Pattern.compile("(?i)\\b(education|studies|school|university|academic background|where.*study|your degree)\\b"))
+            List.of(Pattern.compile("(?i)\\b(education|studies|study|school|university|academic background|where.*study|your degree)\\b"))
         );
 
         responseMap.put(
@@ -63,13 +68,13 @@ public class ChatController {
         );
 
         responseMap.put(
-            "I was born in Heraklion and live permanently downtown.",
+            "I was born in Heraklion and live permanently in the city center.",
             List.of(Pattern.compile("(?i)\\b(where.*you.*from|where.*live|hometown|origin|based in|located.*where)\\b"))
         );
 
         responseMap.put(
             "I aim to apply my programming skills in real-world projects, grow through internships or entry-level roles, and contribute to dynamic software development teams.",
-            List.of(Pattern.compile("(?i)\\b(career goals?|future plans?|what.*want.*do|aspirations?|long term.*plans?)\\b"))
+            List.of(Pattern.compile("(?i)\\b(career goals?|dream|dreams|accomplish|apply.*this.*job|future plans?|what.*want.*do|aspirations?|long term.*plans?)\\b"))
         );
 
         responseMap.put(
